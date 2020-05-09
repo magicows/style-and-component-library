@@ -6,11 +6,12 @@ class Hero extends Component{
         return(
             <div className="row">
                 <div className="col-6">
-                    <img src="http://placedog.net/300/300" alt="" />
+                    <img src="https://placedog.net/300/300" alt="" />
                 </div>
                 <div className="col-6">
-                    <img src="http://placedog.net/300/300" alt="" />
+                    <img src="https://placedog.net/300/300" alt="" />
                 </div>
+
             </div>
         )
     }

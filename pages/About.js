@@ -1,4 +1,3 @@
-import '../styles/instructions.scss'
 import Layout from '../core/global/layout/layout';
 
 export default function About() {

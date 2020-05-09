@@ -1,0 +1,55 @@
+.nav-toggle {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  cursor: pointer;
+  padding: 10px 45px 10px 10px;
+  transition: all 0.2s cubic-bezier(0.37,0.62,0.47,0.72);
+  background: $dream;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  z-index: 12;
+  .open &{
+    background: $shimmer;
+    left: 240px;
+    span {
+      background-color: transparent;
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &:hover{
+    background: $shimmer;
+  }
+}
+  
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  border-radius: 2px;
+  height: 2px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  &.active {
+    top: 0;
+  }
+}
+  
+.nav-toggle span:before {
+  top: -7px;
+}
+
+.nav-toggle span:after {
+  bottom: -7px;
+}

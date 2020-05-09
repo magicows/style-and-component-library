@@ -1,0 +1,64 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+body {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p, button {
+  margin: 0;
+}
+
+html main {
+  //background-color: #121D27;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: $dream;
+  transition: color $trans;
+  &:hover{
+    color: $white;
+  }
+}
+
+.page{
+  .oh{
+    position: relative;
+    background: #f1f1f1;
+    width: 100%;
+    margin-left: auto;
+    transition: width $trans;
+    max-height: 100vh;
+    overflow: auto;
+  }
+  &.open{
+    .oh{      
+      width: calc(100% - 240px);
+    }
+  }
+}
+
+main{
+  width: 100%;
+  margin: 0 auto;
+  transition: all $trans;
+  box-sizing: border-box;
+  &.mob{
+    width: $mob-width;
+  }
+  &.tab{
+    width: $tab-width;
+  }
+  &.lap{
+    width: $lap-width;
+  }
+}
